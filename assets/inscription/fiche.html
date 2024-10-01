@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+<link rel="stylesheet" href="../inscription/fiche.css">
+    
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Fiche d'inscription</h1>
+  <!-- Section 1: Identité de l'élève -->
+    <button type="button" class="collapsible">1. Identité de l'élève</button>
+    <div class="content">
+        <div class="form-row">
+            <div>
+                <label>Nom</label>
+                <input type="text" name="nom">
+            </div>
+            <div>
+                <label>Prénom</label>
+                <input type="text" name="prenom">
+            </div>
+        </div>
+        <div>
+            <label>Date de naissance</label>
+            <input type="date" name="date-naissance">
+        </div>
+        <div>
+            <label>Genre</label><br>
+            <input type="radio" name="genre" value="masculin"> Masculin
+            <input type="radio" name="genre" value="feminin"> Féminin
+        </div>
+        <div>
+            <label>Nationalité</label>
+            <input type="text" name="nationalite">
+        </div>
+        <div>
+            <label>Langue(s) parlée(s)</label>
+            <input type="text" name="langues">
+        </div>
+        <div>
+            <label>Religion</label>
+            <input type="text" name="religion">
+        </div>
+    </div>
+
+    <!-- Section 2: Adresse physique de l'élève -->
+    <button type="button" class="collapsible">2. Adresse physique de l'élève</button>
+    <div class="content">
+        <div class="form-row">
+            <div>
+                <label>Numéro</label>
+                <input type="text" name="numero">
+            </div>
+            <div>
+                <label>Avenue</label>
+                <input type="text" name="avenue">
+            </div>
+        </div>
+        <div class="form-row">
+            <div>
+                <label>Quartier</label>
+                <input type="text" name="quartier">
+            </div>
+            <div>
+                <label>Commune</label>
+                <input type="text" name="commune">
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="collapsible">3. Scolarité</button>
+    <div class="content">
+        <div class="form-row">
+            <div>
+                <label><input type="checkbox"> Crèche</label>
+                <label><input type="checkbox"> Pré-Maternelle</label>
+                <label><input type="checkbox"> 1ère Maternelle</label>
+                <label><input type="checkbox"> 2ème Maternelle</label>
+                <label><input type="checkbox"> 3ème Maternelle</label>
+            </div>
+            <div>
+                <label><input type="checkbox"> 1ère Primaire</label>
+                <label><input type="checkbox"> 2ème Primaire</label>
+                <label><input type="checkbox"> 3ème Primaire</label>
+                <label><input type="checkbox"> 4ème Primaire</label>
+                <label><input type="checkbox"> 5ème Primaire</label>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="collapsible">4. Identité des parents ou du tuteur</button>
+    <div class="content">
+        <div class="form-row">
+            <div>
+                <label>Nom du père</label>
+                <input type="text" name="nom">
+                <label>N° Téléphone (Whatsapp)</label>
+                <input type="tel" name="telephone">
+            </div>
+            <div>
+                <label>Nom de la mère</label>
+                <input type="text" name="postnom">
+            </div>
+                <label>N° Téléphone (Whatsapp)</label>
+                <input type="tel" name="telephone">
+        </div>
+        <div class="form-row">
+            <div>
+                <label>Nom du tuteur</label>
+                <input type="text" name="prenom">
+            </div>
+                <label>N° Téléphone (Whatsapp)</label>
+                <input type="tel" name="telephone">
+            </div>
+        </div>
+    <button type="button" class="collapsible">5. Documents à fournir</button>
+    <div class="content">
+        <div class="form-row">
+            <div>
+                <label for="photo-eleve">Photocopie Carte d'Identité (Parent)</label>
+                <input type="file" id="photo-eleve" name="photo-eleve" accept="image/*" capture="camera">
+
+            </div>    
+            <div>
+                <label for="photo-eleve">Photo de l'élève</label>
+                <input type="file" id="photo-eleve" name="photo-eleve" accept="image/*" capture="camera">
+            </div>
+            <div>
+                <label for="photo-bulletin">Photo du dernier bulletin</label>
+                <input type="file" id="photo-bulletin" name="photo-bulletin" accept="image/*">
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="collapsible">6. Origine</button>
+    <div class="content">
+        <div class="form-row">
+            <div>
+                <label>District</label>
+                <input type="text" name="district">
+            </div>
+            <div>
+                <label>Territoire</label>
+                <input type="text" name="territoire">
+            </div>
+        </div>
+        <div class="form-row">
+            <div>
+                <label>Secteur</label>
+                <input type="text" name="secteur">
+            </div>
+            <div>
+                <label>Province/Village</label>
+                <input type="text" name="province">
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="collapsible">7. Ecole de Provenance</button>
+    <div class="content">
+        <div class="form-row">
+            <div>
+                <label>Nom de l'Ecole</label>
+                <input type="text" name="nom-ecole">
+            </div>
+            <div>
+                <label>Classe et pourcentage</label>
+                <input type="text" name="classe">
+            </div>
+        </div>
+        <div>
+            <label>Contact</label>
+            <input type="text" name="contact">
+        </div>
+    </div>
+
+    <button type="button" class="collapsible">8. Renseignements spécifiques sur l'enfant (santé, alimentation...)</button>
+    <div class="content">
+        <div>
+            <label>Informations spécifiques</label>
+            <input type="text" name="text" id="#">
+        </div>
+    </div>
+
+    <a href="../../assets/Tableau/tableau.html"><button type="submit" class="submit-button">Soumettre</button></a>
+
+</div>
+
+
+<script src="../../assets/inscription/script.js"></script>
+
+</body>
+</html>
+
+
+

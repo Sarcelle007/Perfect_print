@@ -1,0 +1,114 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #333;
+    text-align: center;
+}
+.collapsible {
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.active, .collapsible:hover {
+    background-color: #004094;
+}
+.content {
+    padding: 10px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.form-row div {
+width: 48%;
+}
+label {
+display: block;
+margin-bottom: 5px;
+color: #333;
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="file"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="checkbox"] {
+margin-right: 10px;
+}
+    /* Couleurs spécifiques */
+.content {
+    background-color: #e7f0f8;
+}
+button.collapsible {
+    background-color: #0073e6;
+    color: white;
+}
+
+/* Bouton */
+
+.submit-button {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-left: 25%;
+    margin-right: 40%;
+    background-color: #43ff4c; /* Couleur bleue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.submit-button:hover {
+    background-color: #48c90c; /* Couleur bleue plus foncée au survol */
+}
+
+
+
+        /* Media query pour les petits écrans */
+@media screen and (max-width: 768px) {
+    h1 {
+        color: #000000;
+        text-align: center;
+    }
+    .form-row {
+        flex-direction: column;
+    }
+    .form-row div {
+        width: 100%;
+    }
+}

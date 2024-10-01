@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%; /* Ajustement pour les petits écrans */
+    max-width: 300px; /* Largeur maximale */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.inscription-btn, .connect-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inscription-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.connect-btn {
+    background-color: #008CBA;
+    color: white;
+}
+
+.inscription-btn:hover a{
+    background-color: #45a049;
+}
+
+.connect-btn:hover {
+    background-color: #007bb5;
+}
+
+p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Media Queries pour le Responsive Design */
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px; /* Réduction de la taille du texte sur petits écrans */
+    }
+
+    .logo img {
+        width: 80px; /* Ajustement de la taille du logo */
+        height: 80px; /* Ajustement de la taille du logo */
+    }
+
+    .inscription-btn, .connect-btn {
+        font-size: 14px; /* Réduction de la taille des boutons */
+        padding: 8px; /* Ajustement de la taille des boutons */
+    }
+}
+

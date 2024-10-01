@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>nav-barre</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo"><h1>C.S EL-FILS</h1></a>
+        <div class="nav-links">
+            <ul>
+                <li class="actif"><a href="#">Accueil</a></li>
+                <li><a href="#">Horaire</a></li>
+                <li><a href="#">Evaluation</a></li>
+                <li><a href="#">Payement</a></li>
+                <li><a href="#">Infor</a></li>
+            </ul>
+        </div>
+        <img src="image/menu.PNG" alt="" class="menud">
+    </nav>
+    <header></header>
+
+    <!--ici commencer le coder javascripte-->
+
+    <script>
+        const buton = document.querySelector(".menud")
+        const navlinks = document.querySelector(".nav-links")
+
+        buton.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+
+</body>
+
+</html>

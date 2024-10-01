@@ -1,0 +1,243 @@
+/*
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../image/font.PNG);
+    background-size: cover;
+}
+
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: rgba(0, 0, 0, 0.644);
+}
+
+.navbar .logo img {
+    height: 100px;
+    width: 100px;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px;
+}
+
+.navbar .nav-links ul li.actif a {
+    color: rgb(207, 58, 58);
+    font-weight: 600;
+}
+
+.navbar .menud {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    width: 35px;
+}
+
+/*ici commencer le responcive*/
+/*
+@media screen and (max-width: 900px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+    }
+
+    .navbar .menud {
+        display: block;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+    .nav-links ul {
+        position: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+}
+
+*/
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 842px; /* Limite la largeur à celle d'une page A4 */
+    margin: 0 auto; /* Centre le contenu horizontalement */
+}
+
+header, .navbar, .content {
+    width: 100%; /* Assure que ces éléments prennent toute la largeur disponible */
+}
+
+header {
+    height: 100vh;
+    width: 100vh;
+    background-image: url(../image/font.PNG);
+    background-size: cover;
+}
+
+.navbar {
+    position: absolute;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centre le contenu verticalement */
+    width: 100%;
+    background-color: rgba(255, 20, 147, 0.5); /* Fond transparent rose */
+}
+
+.navbar a {
+    color: rgba(0, 0, 0, 0.644);
+}
+
+.navbar .logo {
+    display: flex; /* Utilise flexbox pour aligner le h1 */
+    align-items: center; /* Centre verticalement */
+    color: black;
+}
+
+.navbar .logo h1 {
+    margin: 0; /* Enlève la marge par défaut */
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px;
+}
+
+.navbar .nav-links ul li.actif a {
+    color: rgb(207, 58, 58);
+    font-weight: 600;
+}
+
+.navbar .menud {
+    display: none; /* Masque le bouton de menu par défaut */
+    position: absolute;
+    top: 15px; /* Ajuste la position du bouton */
+    right: 20px; /* Ajuste la position du bouton */
+    width: 35px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 900px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        color: black;
+        top: 15px;
+        left: 50%; /* Centre horizontalement */
+        transform: translateX(-50%); /* Ajuste pour centrer */
+    }
+
+    .navbar .menud {
+        display: block; /* Affiche le bouton de menu en responsive */
+        right: 10%;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(248, 229, 239, 0.5); /* Fond transparent rose */
+        backdrop-filter: blar(7px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%; /* Masque les liens à gauche */
+        transition: all 0.5s ease;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0; /* Affiche les liens lorsque mobile-menu est ajouté */
+    }
+
+    .nav-links ul {
+        flex-direction: column; /* Aligne les éléments verticalement */
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+}
+
+/* Cacher le contenu quand le menu est ouvert */
+.hidden {
+    display: none; /* Masque le h1 et le p */
+}
+
+/* Style pour centrer le contenu de la page */
+.content {
+    display: flex; /* Utilise flexbox pour centrer */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: calc(100vh - 60px); /* Ajuste la hauteur pour tenir compte de la navbar */
+}
